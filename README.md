@@ -11,6 +11,7 @@ Or you can see in a log files, such as ``log_slow_queries`` or ``log-bin`` (aka 
 
 ## How to install this wonderful package?
 
+    pip install -e git://github.com/adw0rd/django-sql-stacktrace.git#egg=sqlstacktrace
 
 ### Add to settings.py:
 
