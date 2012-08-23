@@ -1,6 +1,6 @@
 """Module provide a information about call stack (frames, stacktrace).
 
-Code is from debug_toolbar. 
+Code is from debug_toolbar.
 """
 
 import sys
