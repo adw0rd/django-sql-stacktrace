@@ -1,4 +1,4 @@
-__version__ = "0.1-alpha"
+__version__ = "0.1"
 
 from django.conf import settings
 from .replacer import replace_call
