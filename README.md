@@ -1,6 +1,6 @@
 # django-sql-stacktrace
 
-Reusable application, which puts a python stack trace in the SQL query as a comment (useful for debugging).
+Pluggable application, which puts a python stack trace in the SQL query as a comment (useful for debugging).
 
 For more details see http://adw0rd.com/2012/django-sql-stacktrace/en/
 

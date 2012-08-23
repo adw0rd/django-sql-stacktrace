@@ -2,16 +2,13 @@ from setuptools import setup, find_packages
 from sqlstacktrace import __version__
 
 long_description = ""
-try:
-    readme = open("README.md")
-    long_description = str(readme.read())
-finally:
-    readme.close()
+with open('README.md') as file:
+    long_description = file.read()
 
 setup(
     name='django-sql-stacktrace',
     version=__version__,
-    description="Reusable application, which puts a python stack trace in the SQL query as a comment (useful for debugging)",
+    description="Pluggable application, which puts a python stack trace in the SQL query as a comment (useful for debugging)",
     long_description=long_description,
     keywords='django, debug, debugging, logger, sql, stack, trace, frame',
     author='Mikhail Andreev',
