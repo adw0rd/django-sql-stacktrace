@@ -1,5 +1,4 @@
-django-sql-stacktrace
-=====================
+# django-sql-stacktrace
 
 Reusable application, which puts a python stack trace in the SQL query as a comment (useful for debugging).
 
@@ -10,11 +9,10 @@ After installed you can see in ``processlist`` a SQL-query and comment with pyth
 Or you can see in a log files, such as ``log_slow_queries`` or ``log-bin`` (aka 'binlog').
 
 
-How to install this wonderful package?
-=====================
+## How to install this wonderful package?
 
-Add to settings.py:
----------------------
+
+### Add to settings.py:
 
     INSTALLED_APPS = (
         'sqlstacktrace',
@@ -23,8 +21,7 @@ Add to settings.py:
     SQL_STACKTRACE = True
 
 
-Start runserver or any other server:
----------------------
+### Start runserver or any other server:
 
     ./manage.py runserver 8000
 
