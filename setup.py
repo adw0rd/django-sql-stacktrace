@@ -1,9 +1,26 @@
 from setuptools import setup, find_packages
 from sqlstacktrace import __version__
 
-long_description = ""
-with open('README.md') as file:
-    long_description = file.read()
+long_description = """
+For more details see:
+---------------------
+
+* http://adw0rd.com/2012/django-sql-stacktrace/en/
+* http://github.com/adw0rd/django-sql-stacktrace
+
+
+Settings:
+---------------------
+
+::
+
+    INSTALLED_APPS = (
+        'sqlstacktrace',
+    )
+
+    SQL_STACKTRACE = True
+
+"""
 
 setup(
     name='django-sql-stacktrace',
