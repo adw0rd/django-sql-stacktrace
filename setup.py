@@ -1,26 +1,13 @@
 from setuptools import setup, find_packages
 from sqlstacktrace import __version__
 
-long_description = """
-For more details see:
----------------------
-
-* http://adw0rd.com/2012/django-sql-stacktrace/en/
-* http://github.com/adw0rd/django-sql-stacktrace
-
-
-Settings:
----------------------
-
-::
-
-    INSTALLED_APPS = (
-        'sqlstacktrace',
-    )
-
-    SQL_STACKTRACE = True
-
-"""
+long_description = ""
+try:
+    readme = open("README.rst")
+    long_description = str(readme.read())
+    readme.close()
+except:
+    pass
 
 setup(
     name='django-sql-stacktrace',
@@ -36,10 +23,13 @@ setup(
     zip_safe=False,
     include_package_data=True,
     classifiers=[
+        "Environment :: Web Environment",
         "Programming Language :: Python",
         "Programming Language :: SQL",
-        "Environment :: Web Environment",
         "Framework :: Django",
+        "License :: OSI Approved :: BSD License",
         "Topic :: Software Development :: Debuggers",
+        "Topic :: Software Development :: Libraries :: Application Frameworks",
+        "Topic :: Software Development :: Libraries :: Python Modules",
     ],
 )
