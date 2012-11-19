@@ -17,11 +17,11 @@ class StacktraceCursorWrapper(CursorWrapper):
             stacktrace = []
             for stack in stacks:
                 stacktrace.append(
-                    u"""STACKTRACE: \n> File "{0}", line {1}, in {2}\n> {3}\n""".format(
+                    u"""File "{0}", line {1}, in {2}\n\t{3}""".format(
                         *[smart_unicode(stack_data) for stack_data in stack]).replace("%", "%%"))
             stacktrace = "\n".join(stacktrace)
             stacktrace = stacktrace.replace('/*', '\/\*').replace('*/', '\*\/')
         except:
             stacktrace = u"WITHOUT STACKTRACE"
-        sql = u"{sql} /* {stacktrace} */".format(stacktrace=stacktrace, sql=smart_unicode(sql))
+        sql = u"{sql} \n/* {stacktrace} \n*/".format(stacktrace=stacktrace, sql=smart_unicode(sql))
         return self.cursor.execute(sql, params)
