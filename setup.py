@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-from sqlstacktrace import __version__
 
 long_description = ""
 try:
@@ -11,7 +10,7 @@ except:
 
 setup(
     name='django-sql-stacktrace',
-    version=__version__,
+    version='0.2',
     description="Pluggable application, which puts a python stack trace in the SQL query as a comment (useful for debugging)",
     long_description=long_description,
     keywords='django, debug, debugging, logger, sql, stack, trace, frame',
