@@ -1,5 +1,6 @@
 __version__ = "0.3.0"
 
+
 from django.conf import settings
 from .replacer import replace_call
 
