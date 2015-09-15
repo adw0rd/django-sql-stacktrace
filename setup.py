@@ -11,7 +11,7 @@ except:
 
 setup(
     name='django-sql-stacktrace',
-    version='0.3.0',
+    version='0.3.1',
     description="Pluggable application, which puts a python stack trace in the SQL query as a comment (useful for debugging)",
     long_description=long_description,
     keywords='django, debug, debugging, logger, sql, stack, trace, frame',
