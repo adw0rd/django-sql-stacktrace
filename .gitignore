@@ -2,3 +2,5 @@
 *.pyc
 *.mo
 local_settings.py
+dist/
+django_sql_stacktrace.egg-info/
